@@ -85,7 +85,6 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord
 
 Syntax: $ sudo mysql_secure_installation
 
-![RunInteractiveScript](./img/)
 
 This command  would ask if we want the VALIDATE PASSWORD PLUGIN, however if this is enabled password must match specifed criteria if not they would be rejected by MYSQL with an error. For this reason we would leave validation disabled in this documentation.
 
@@ -148,7 +147,7 @@ The image below shows the implementation of the documentation above
 
 ![lnstallphppackages](./img/11.confignginx.png)
 
-### Testing Configuration and disabledefault Host
+### Testing Configuration and disable default Host
 
 To test our configuration we use the syntax below:
 
@@ -170,7 +169,7 @@ To ensure our new configuration works we need to disable default host and then r
 
 ### Testing PHP with Nginx
 
-In this section we would test to validate that nginx can correctly hand .php file to PHP processor.  To do this we would create  an info.php file  and save phpinfo(); within the php tag
+In this section we would test to validate that nginx can correctly handle .php file to PHP processor.  To do this we would create  an info.php file  and save phpinfo(); within the php tag
 
 $ nano /var/www/projectLEMP/info.php
 
@@ -180,7 +179,7 @@ http://`server_domain_or_IP`/info.php
 
 ![TestphpwithNginx](./img/15.testphp.png)
 
-The img page shows the info.php page which shows information about the page. the remove command can be used to remove this file:
+The img page shows the info.php page which shows information about the page. the rm command can be used to remove this file:
 
 -syntax: $ sudo rm /var/www/projectlemp/info.php
 
